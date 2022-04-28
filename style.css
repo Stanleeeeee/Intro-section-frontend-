@@ -1,9 +1,9 @@
 *,
 *::before,
 *::after {
-  padding: 0
-  ;margin: 0;
-  box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .nav-items {
@@ -47,7 +47,7 @@ header {
 }
 
 #mobile {
-  max-width: ;width: 100%;
+  width: 100%;
 }
 
 #desktop {
@@ -91,7 +91,7 @@ header {
 
 .partners-cont {
   display: flex;
-  padding: 40px 24px; 
+  padding: 40px 24px;
   justify-content: space-between;
   flex: 1;
 }
@@ -110,7 +110,7 @@ header {
   border-radius: 10px;
 }
 
-@media (min-width : 375px) {
+@media (min-width: 375px) {
   div.logo {
     justify-content: space-between;
   }
@@ -150,7 +150,7 @@ header {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .nav-items {
     display: flex;
     align-items: flex-start;
@@ -176,63 +176,53 @@ header {
     background-size: 40%;
     background-position: 100% 6%;
     margin-right: 30px;
- }
+  }
 
- .header-container h1 {
-   text-align: left;
-   padding-left: 50px;
-   font-family: "Epilogue", sans-serif;
-   font-weight: 700;
-   font-size: 30px;
- }
+  .header-container h1 {
+    text-align: left;
+    padding-left: 50px;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
 
- .header-container h1 span {
-   display: block;
-   overflow: hidden;
-   white-space: nowrap;
- }
+  .header-container h1 span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 
- .header-container p {
-   text-align: left;
-   padding-left: 50px;
-   width: 398px;
- }
+  .header-container p {
+    text-align: left;
+    padding-left: 50px;
+    width: 398px;
+  }
 
- .btn2 {
-   margin-left: 50px;
- }
+  .btn2 {
+    margin-left: 50px;
+  }
 
- .partners-cont {
-   width: 650px;
-   padding-left: 30px;
- }
+  .partners-cont {
+    width: 650px;
+    padding-left: 30px;
+  }
 }
 
- @media (min-width: 1200px) {
-   .header-container h1 {
-     padding-left: 200px;
-   }
+@media (min-width: 1200px) {
+  .header-container h1 {
+    padding-left: 200px;
+  }
 
-   .header-container p {
-     padding-left: 200px;
-     width: 650px;
-   }
+  .header-container p {
+    padding-left: 200px;
+    width: 650px;
+  }
 
-   .btn2 {
-     margin-left: 190px;
-   }
+  .btn2 {
+    margin-left: 190px;
+  }
 
-   .partners-cont {
-     padding-left: 200px;
-   }
-
- }
-
- 
-
-
-
-
-
-
+  .partners-cont {
+    padding-left: 200px;
+  }
 }
