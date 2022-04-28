@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+  padding: 0
+  ;margin: 0;
+  box-sizing: border-box; 
+}
+
+.nav-items {
+  display: none;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.logo {
+  display: flex;
+  padding: 30px 10px 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.menu {
+  margin-left: 200px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.close {
+  display: block;
+  position: relative;
+  top: -90%;
+  left: 85%;
+  color: #ec5242;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+header {
+  padding: 12px 24px 12px 24px;
+}
+
+#mobile {
+  max-width: ;width: 100%;
+}
+
+#desktop {
+  display: none;
+}
+
+.header-container h1 {
+  padding-top: 2.5rem;
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+  font-family: "Epilogue", sans-serif;
+  letter-spacing: 0.03rem;
+}
+
+.header-container p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Epilogue", sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.btn2 {
+  display: block;
+  margin: 25px auto;
+  padding: 25px 45px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.btn2 :hover {
+  cursor: pointer;
+}
+
+#section #partners {
+  background-color: hsl(0, 0%, 41%);
+}
+
+.partners-cont {
+  display: flex;
+  padding: 40px 24px; 
+  justify-content: space-between;
+  flex: 1;
+}
+
+.attribution {
+  padding-top: 15px;
+  font-size: 1rem;
+}
+
+.end {
+  margin-bottom: 5px;
+  border-bottom: 5px solid #0d151e;
+  width: 134px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+@media (min-width : 375px) {
+  div.logo {
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin-left: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .btn2 {
+    margin-top: 90px;
+  }
+
+  .partners-cont {
+    width: auto;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .nav-items li {
+    display: flex;
+    justify-self: center;
+  }
+
+  .nav-items ul {
+    list-style-type: none;
+  }
+
+  .nav-items ul:hover {
+    cursor: pointer;
+  }
+
+  /** Header Design */
+  .header-container {
+    background-image: url("./images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 6%;
+    margin-right: 30px;
+ }
+
+ .header-container h1 {
+   text-align: left;
+   padding-left: 50px;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 700;
+   font-size: 30px;
+ }
+
+ .header-container h1 span {
+   display: block;
+   overflow: hidden;
+   white-space: nowrap;
+ }
+
+ .header-container p {
+   text-align: left;
+   padding-left: 50px;
+   width: 398px;
+ }
+
+ .btn2 {
+   margin-left: 50px;
+ }
+
+ .partners-cont {
+   width: 650px;
+   padding-left: 30px;
+ }
+}
+
+ @media (min-width: 1200px) {
+   .header-container h1 {
+     padding-left: 200px;
+   }
+
+   .header-container p {
+     padding-left: 200px;
+     width: 650px;
+   }
+
+   .btn2 {
+     margin-left: 190px;
+   }
+
+   .partners-cont {
+     padding-left: 200px;
+   }
+
+ }
+
+ 
+
+
+
+
+
+
+}
