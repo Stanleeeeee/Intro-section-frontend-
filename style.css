@@ -14,6 +14,26 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
+.open-menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 100px;
+  background-color: #313131;
+}
+
+.open-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
   padding: 30px 10px 15px 25px;
@@ -23,14 +43,61 @@ body {
 }
 
 .menu {
-  margin-left: 200px;
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
 }
 
 .menu:hover {
   cursor: pointer;
 }
 
+.showMenu {
+  transform: translateY(0);
+}
+
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+
+.submenu-active .submenu {
+  display: block;
+}
+
+.has-submenu i {
+  font-size: 12px;
+}
+
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  padding-left: 5px;
+}
+
+.subitem a {
+  padding: 10px 15px;
+}
+
+.submenu-active {
+  background-color: #111;
+  border-radius: 3px;
+}
+
 .close {
+  display: none;
+}
+
+.close-active {
   display: block;
   position: relative;
   top: -90%;
@@ -147,18 +214,31 @@ header {
   }
 
   nav {
+    padding: 0 15px;
+  }
+
+  .nav-bar {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 
   .nav-items {
     display: flex;
-    align-items: flex-start;
+    transition: transform 0.2s;
+    list-style-type: none;
+    padding-top: 1rem;
   }
 
-  .nav-items li {
+  .submenu .item {
+    list-style-type: none;
+  }
+
+  .left-items {
     display: flex;
-    justify-self: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 40px;
+    list-style-type: none;
   }
 
   .nav-items ul {
@@ -166,6 +246,16 @@ header {
   }
 
   .nav-items ul:hover {
+    cursor: pointer;
+  }
+
+  .right-items {
+    display: flex;
+    margin-left: 550px;
+    gap: 60px;
+  }
+
+  .right-items :hover {
     cursor: pointer;
   }
 

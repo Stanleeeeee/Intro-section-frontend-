@@ -22,21 +22,35 @@
       <div class="nav-bar">
       <div class="logo">
         <img src="./images/logo.svg" alt="logo" id="logo-img">
-      
-      <img class="menu" src="./images/icon-menu.svg" alt="hambuger menu">
+      </div>
+      <div class="hamb">
+      <img class="menu" src="./images/icon-menu.svg" alt="hambuger-menu">
       <img class="close" src="./images/icon-close-menu.svg" alt="close-icon">
     </div>
       <div class="nav-items">
       <ul class="left-items">
-        <li class="ite">Features<img src="./images/icon-arrow-down.svg" alt="dropdown"></li>
-        <li class="ite">Company<img src="./images/icon-arrow-down.svg" alt="dropdown"></li>
-        <li class="ite">Careers</li>
-        <li class="ite">About</li>
+        <li class="item has-submenu"><a href="#">Features<img src="./images/icon-arrow-down.svg" alt="dropdown" id="drop"></a>
+          <ul class="submenu">
+            <li><a href="#"><img src="./images/icon-todo.svg" alt="todo item"> Todo list</a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="calendar item"> calendar</a></li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="reminder item"> Reminder</a></li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="planning item">Planning</a></li>
+          </ul>
+        </li>
+             <li class="item has-submenu"><a href="#">Company<img src="./images/icon-arrow-down.svg" alt="dropdown"></a>
+            <ul class="submenu">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#">Careers</a></li>
+        <li class="item"><a href="#">About</a></li>
       </ul>
       <div class="right-side">
-        <ul>
-          <li>Login</li>
-          <li><button type="button">Register</button></li>
+        <ul class="right-items">
+          <li class="item"><a href="#">Login</a></li>
+          <li class="item"><button type="button">Register</button></li>
         </ul>
       </div>
       </div>
@@ -71,5 +85,6 @@
     https://github.com/Stanleeeeee">Ezeoke Stanley</a>
     <div class="end"></div>
   </div>
+  <script src= "./menu.js" defer></script>
 </body>
 </html>
